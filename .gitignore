@@ -1,0 +1,5 @@
+models/
+test_images/
+__pycache__/
+imagecaptioningvenv/
+demo-website/env/
