@@ -2,6 +2,8 @@ import streamlit as st
 from PIL import Image
 import os
 
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+
 st.title("Image Captioning with Visual Attention Demo")
 
 image_file = st.file_uploader(
@@ -14,7 +16,7 @@ image_file = st.file_uploader(
 )
 
 if image_file is not None:
-    temp_dir =  "demo_website/temp"
+    temp_dir = os.path.join(ROOT_DIR, "temp")
     if not os.path.exists(temp_dir):
         os.makedirs(temp_dir)
     
@@ -28,7 +30,7 @@ if image_file is not None:
     st.success("Success")
 
 else:
-    file = 'images/test_dog.jpg'
+    file = os.path.join(ROOT_DIR, "images", "test_dog.jpg")
     img = Image.open(file)
     st.image(img, width=700, channels="BGR", use_container_width="always")
     st.markdown("**Predicted caption:**")

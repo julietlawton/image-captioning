@@ -1,5 +1,7 @@
+.DS_Store
 models/
 test_images/
 __pycache__/
-imagecaptioningvenv/
+env/
 demo-website/env/
+demo-website/temp/
