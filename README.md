@@ -25,3 +25,11 @@ Link to demo: https://image-captioning-capstone-demo.streamlit.app
 <p align="center">
 <img width="423" alt="image" src="https://github.com/user-attachments/assets/56cf04f1-d50f-4b09-8166-aefc5e005a6b">
 </p>
+
+Contributers:
+
+julietlawton: Exploratory Data Analysis, Caption Preprocessing, Image Preprocessing, Data Generators, Evaluation Metrics, Visual Attention (DenseNet), Visual Attention (ViT), MobileNetV3-LSTM, Custom CNN-LSTM, Demo Web App
+
+rahulbdass: VGG16-LSTM
+
+steveamancha: ResNet50-LSTM
